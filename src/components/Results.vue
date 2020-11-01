@@ -6,6 +6,24 @@
             <p>{{poolResult[0].valueProcent + 0.1}}</p>
             
         </div>
+        <v-alert type="success"></v-alert>
+
+        <v-banner elevation="15" single-line :sticky="sticky">
+            We can't save your edits while you are in offline mode.
+
+            <template v-slot:actions>
+                <v-btn
+                text
+                color="deep-purple accent-4"
+                >
+                Get Online
+                </v-btn>
+            </template>
+    </v-banner>
+
+    <v-btn depressed color="primary"> Primary </v-btn>
+
+
     </div>
 </template>
 
