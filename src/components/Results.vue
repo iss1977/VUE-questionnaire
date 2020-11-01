@@ -2,6 +2,9 @@
     <div class="vote-window__main" @click ="favoriteTwoot(twoot.id)">
         <div class="vote-window__question-label">
             <p>Zeit fur noch eine Frage? </p>
+            <p>{{poolResult[0].answer}}</p>
+            <p>{{poolResult[0].valueProcent + 0.1}}</p>
+            
         </div>
     </div>
 </template>
@@ -11,8 +14,8 @@
 export default {
     name:"Results",
     props:{
-        username:{
-            type: String,
+        poolResult:{
+            type: Object,
             required: true
         }
     },

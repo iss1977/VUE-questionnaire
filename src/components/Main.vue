@@ -12,7 +12,7 @@
     <Vote username="My User" />
   </div>
 
-    <Results username="My Results User"/>
+    <Results :poolResult="poolResultData"/>
 
 </template>
 
@@ -24,6 +24,17 @@ import Results from './Results';
 export default {
   name: 'Main',
   components:{Vote, Results},
+  data(){
+    return {
+      poolResultData:[
+        {'question':'Hast du haustiere ?',
+        'answer':'Ja',
+        'valueProcent':56},
+        {'question':'Hast du haustiere ?',
+        'answer':'Nein',
+        'valueProcent':44}
+      ]}
+  },
   props: {
     msg: String
   }
