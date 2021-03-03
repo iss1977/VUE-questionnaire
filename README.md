@@ -1,6 +1,13 @@
-# pool-challenge
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/555px-Vue.js_Logo_2.svg.png" width="400">
 
-## Project setup
+# VUE questionnaire APP
+
+## Features
+- Basic app setup using VueJS
+- Vuetify Integration
+- Basic Animations
+
+### Project setup
 ```
 npm install
 ```
@@ -10,15 +17,3 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
